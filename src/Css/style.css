@@ -11,9 +11,26 @@ body {
   background: #f3fdff;
 }
 
+footer{
+  top: 98vh;
+  position: relative;
+}
+
+#footer{
+  background: rgb(196, 196, 196);
+  position: static;
+  height: 100px;
+}
+
+#text_footer {
+  padding: 4% 0% 0% 40%;
+  position: absolute;
+  font-size: 20px;
+}
+
 .contenner_nav {
   display: flex;
-  min-height: 100vh;
+  min-height: 98vh;
   float: left;
 }
 
@@ -190,7 +207,7 @@ section {
 #table_Flex {
   position: relative;
   align-content: center;
-  padding-top: 20%;
+  padding-top: 10%;
   left: 5%;
 }
 
@@ -201,13 +218,13 @@ section {
 }
 
 #headCell {
-  font-size: 25px;
+  font-size: 35px;
   background: #4187f6;
   color: #fff;
 }
 
 .P {
-  font-size: 20px;
+  font-size: 30px;
   background: #6fa2f5;
   color: #fff;
 }
@@ -218,20 +235,37 @@ section {
 
 .i_Cell {
   color: #2b3b2b;
-  font-size: 15px;
+  font-size: 25px;
   padding: 2px;
 }
 
 .i_Cell:hover {
   color: #4c8af0;
-  font-size: 15px;
+  font-size: 25px;
   padding: 2px;
   transition: all 0.8s;
 }
 
 @media screen and (max-width: 639px) {
   .contenner_nav {
-    min-height: 220vh;
+    min-height: 170vh;
+  }
+
+  footer{
+    top: 98vh;
+    position: relative;
+  }
+  
+  #footer{
+    background: rgb(196, 196, 196);
+    height: 100px;
+    width: 600px;
+  }
+  
+  #text_footer {
+    padding: 10% 0% 0% 25%;
+    position: absolute;
+    font-size: 15px;
   }
 
   .navigation {
@@ -245,7 +279,7 @@ section {
   }
 
   ul {
-    padding-top: 180px;
+    padding-top: 120px;
   }
 
   .icon {
